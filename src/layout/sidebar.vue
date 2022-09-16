@@ -34,10 +34,10 @@ const toggle = () => {
     if (screen.width <= 768)
         status.value = !status.value
 };
-let height = () => { };
+let height = ref(() => { });
 let toTop = () => { };
 onMounted(() => {
-    height = () => document.body.scrollHeight;
+    height.value = () => document.body.scrollHeight;
     toTop = () => {
         const beginTime = Date.now()
         const beginValue = document.documentElement.scrollTop;
