@@ -5,7 +5,8 @@
         </router-link>
         <ul v-for="item in nav">
             <li>
-                <router-link v-if="item.link.startsWith('/')" :to="item.link">{{(item as page).name}}</router-link>
+                <Link v-if="item.link.startsWith('/')" :text="(item as page).name" :link="item.link"
+                    :colorless="true" />
                 <a v-else :href="item.link" target="_blank">{{(item as page).name}}</a>
             </li>
         </ul>
@@ -13,8 +14,10 @@
 </template>
 
 <script lang="ts" setup>
-import config from "../../config"
-import { page } from "../config"
+import config from "../../config";
+import { page } from "../config";
+import Link from "../component/link.vue";
+
 const { nav } = config
 </script>
 
