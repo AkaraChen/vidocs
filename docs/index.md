@@ -4,11 +4,11 @@ title: Vidocs
 
 # Vidocs
 
-Minimalist documentation with Vue Typescript powered by Vite SSG and [fish](https://github.com/akarachen/fish).
+Minimalist documentation with Vue Typescript powered by Vite and [fish](https://github.com/akarachen/fish).
 
 ## Features
 
-- ⚛️ SSG & SSR Supports
+- ⚛️ SSR & SSG(WIP) Supports
 - 💨 Fast and accessible effortlessly
 - ◾️ Minimalist with easy customisation
 

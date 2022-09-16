@@ -16,6 +16,11 @@ import Sidebar from './layout/sidebar.vue';
 </script>
 
 <style>
+#app {
+  width: 100%;
+  height: 100%;
+}
+
 .container-lg {
   padding: 0 !important;
   scrollbar-width: 0;
