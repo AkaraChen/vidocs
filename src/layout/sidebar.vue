@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue';
+import { ref } from 'vue';
 import config from '../../config';
 import { page } from "../config"
 const { sidebar, text } = config;
@@ -34,31 +34,26 @@ const toggle = () => {
     if (screen.width <= 768)
         status.value = !status.value
 };
-let height = () => { };
-let toTop = () => { };
-onMounted(() => {
-    height = () => document.body.scrollHeight;
-    toTop = () => {
-        const beginTime = Date.now()
-        const beginValue = document.documentElement.scrollTop;
-        const rAF = window.requestAnimationFrame || (func => setTimeout(func, 16))
-        const cubic = (value: number) => Math.pow(value, 2)
-        const easeInOutCubic = (value: number) => value < 0.5
-            ? cubic(value * 2) / 2
-            : 1 - cubic((1 - value) * 2) / 2
-        const frameFunc = () => {
-            const progress = (Date.now() - beginTime) / 150;
-            if (progress < 1) {
-                document.documentElement.scrollTop = beginValue * (1 - easeInOutCubic(progress))
-                rAF(frameFunc)
-            } else {
-                document.documentElement.scrollTop = 0
-            }
+const height = () => document.body.scrollHeight;
+const toTop = () => {
+    const beginTime = Date.now()
+    const beginValue = document.documentElement.scrollTop;
+    const rAF = window.requestAnimationFrame || (func => setTimeout(func, 16))
+    const cubic = (value: number) => Math.pow(value, 2)
+    const easeInOutCubic = (value: number) => value < 0.5
+        ? cubic(value * 2) / 2
+        : 1 - cubic((1 - value) * 2) / 2
+    const frameFunc = () => {
+        const progress = (Date.now() - beginTime) / 150;
+        if (progress < 1) {
+            document.documentElement.scrollTop = beginValue * (1 - easeInOutCubic(progress))
+            rAF(frameFunc)
+        } else {
+            document.documentElement.scrollTop = 0
         }
-        rAF(frameFunc)
     }
-})
-
+    rAF(frameFunc)
+}
 </script>
 
 <style scoped>
