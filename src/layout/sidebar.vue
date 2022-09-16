@@ -8,14 +8,13 @@
             <button @click="toggle" style="font-size: 24px;">╳</button>
             <ul>
                 <li v-for="item in sidebar">
-                    <div v-if="!('list' in item)">
-                        <Link :link="item.link" :text="item.name" />
-                    </div>
+                    <router-link @click="toggle" v-if="!('list' in item)" :to="(item as page).link">{{item.name}}
+                    </router-link>
                     <div v-else>
                         <p>{{item.name}}</p>
                         <ul>
                             <li v-for="innerItem in item.list" class="inner">
-                                <Link :link="innerItem.link" :text="innerItem.name" />
+                                <router-link @click="toggle" :to="innerItem.link">{{innerItem.name}}</router-link>
                             </li>
                         </ul>
                     </div>
@@ -28,9 +27,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
 import config from '../../config';
-import { isSPA } from "../main";
-import Link from "../component/link.vue"
-
+import { page } from "../config"
 const { sidebar, text } = config;
 const status = ref(false);
 const toggle = () => {
