@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite --open --host",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview --open --host"
+    "build": "vue-tsc --noEmit && vite-ssg build",
+    "preview": "vite preview --open --host",
+    "build:spa": "vue-tsc --noEmit && vite build"
   },
   "dependencies": {
     "@akrc/fish": "0.2.1",
