@@ -1,9 +1,7 @@
 <template>
   <Nav />
   <div class="container-lg">
-    <ClientOnly>
-      <Sidebar />
-    </ClientOnly>
+    <Sidebar />
     <div class="content">
       <RouterView />
     </div>
