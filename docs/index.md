@@ -8,7 +8,7 @@ Minimalist documentation with Vue Typescript powered by Vite and [fish](https://
 
 ## Features
 
-- ⚛️ SSR & SSG(WIP) Supports
+- ⚛️ SSR & SSG Supports
 - 💨 Fast and accessible effortlessly
 - ◾️ Minimalist with easy customisation
 
@@ -32,8 +32,8 @@ pnpm run dev
 pnpm run build
 ```
 
-### Build for production (SPA)
+### Build for production (SSG)
 
 ```shell
-pnpm run build:spa
+pnpm run build:ssg
 ```
