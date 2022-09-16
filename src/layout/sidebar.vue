@@ -66,6 +66,7 @@ aside {
     width: calc(100vw - 64px);
     z-index: 100;
     transition: 0.125s ease-in;
+    overflow: auto;
 }
 
 aside button {
@@ -131,6 +132,7 @@ li+li {
         padding-top: 10px;
         background-color: transparent;
         top: 75px;
+        z-index: 100;
     }
 
     aside.hide>* {

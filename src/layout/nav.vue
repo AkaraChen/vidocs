@@ -29,7 +29,6 @@ nav {
     align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     background-color: var(--nav-color);
-    z-index: 200;
 }
 
 nav>*:first-child {
@@ -66,5 +65,11 @@ h1+ul {
 li {
     margin-left: 0.75em;
     margin-right: 0.75em;
+}
+
+@media screen and (min-device-width: 768px) {
+    nav {
+        z-index: 200;
+    }
 }
 </style>
