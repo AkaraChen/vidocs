@@ -116,7 +116,6 @@ button+button {
 ul {
     margin: 0;
     list-style: none;
-    width: 100vw;
 }
 
 li+li {
