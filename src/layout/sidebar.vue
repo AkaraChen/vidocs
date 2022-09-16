@@ -83,7 +83,7 @@ aside button {
 
 .btn-group {
     position: sticky;
-    top: 58px;
+    top: 55px;
     left: 0;
     width: 100%;
     display: flex;
