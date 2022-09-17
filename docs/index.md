@@ -8,7 +8,6 @@ Minimalist documentation with Vue Typescript powered by Vite and [fish](https://
 
 ## Features
 
-- ⚛️ SSR & SSG Supports
 - 💨 Fast and accessible effortlessly
 - ◾️ Minimalist with easy customisation
 
@@ -23,17 +22,11 @@ pnpm create vidocs
 ### Run in development mode
 
 ```shell
-pnpm run dev
+pnpm vidocs dev
 ```
 
 ### Build for production
 
 ```shell
-pnpm run build
-```
-
-### Build for production (SSG)
-
-```shell
-pnpm run build:ssg
+pnpm vidocs build
 ```

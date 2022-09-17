@@ -1,4 +1,11 @@
-export interface config {
+import { defineStore } from "pinia";
+import { config } from "virtual:config";
+
+export const useStore = defineStore("config", {
+  state: () => config as configType,
+});
+
+export interface configType {
   nav: Array<page>;
   name: string;
   sidebar: Array<menuItem>;
