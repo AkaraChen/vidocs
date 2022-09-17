@@ -1,5 +1,3 @@
-import { config } from "./src/config";
-
 export default {
   name: "Vidocs",
   sidebar: [
@@ -15,4 +13,4 @@ export default {
     toTop: "Back To Top",
     menu: "Menu",
   },
-} as config;
+};

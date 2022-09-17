@@ -4,7 +4,7 @@ title: Configuration
 
 # Configuration
 
-Just edit `config.ts`, here is the example:
+Just edit `vidocs.config.js`, here is the example:
 
 ```js
 {
