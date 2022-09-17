@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "esbuild bin.ts --outfile=bin.js",
-    "prepublish": "pnpm run build"
+    "prepublish": "pnpm run build",
+    "docs:build": "node docs"
   },
   "bin": {
     "vidocs": "./index.js"
