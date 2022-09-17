@@ -22,11 +22,6 @@ specifiers:
 dependencies:
   '@akrc/fish': 0.2.1
   '@types/markdown-it-link-attributes': 3.0.1
-  '@types/mdx': 2.0.2
-  markdown-it-link-attributes: 4.0.1
-  vue: 3.2.39
-
-devDependencies:
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.2+vue@3.2.39
   '@vueuse/head': 0.7.11_vue@3.2.39
   critters: 0.0.16
@@ -39,6 +34,7 @@ devDependencies:
   vite-plugin-pages: 0.26.0_vite@3.1.2
   vite-plugin-vue-markdown: 0.22.1_vite@3.1.2
   vite-ssg: 0.20.2_dopopvbts3sq6rjbdfirkggb4m
+  vue: 3.2.39
   vue-router: 4.1.5_vue@3.2.39
 
 devDependencies:
@@ -2099,7 +2095,7 @@ packages:
     dependencies:
       html-minifier-terser: 6.1.0
       vite: 3.1.2
-    dev: true
+    dev: false
 
   /vite-plugin-pages/0.26.0_vite@3.1.2:
     resolution: {integrity: sha512-yJZvwHEt7puYIf19S89IvkDsWPjWleSied4H8hmdW6i8buCA93z1UAU1ipW1d8fNKrC4FzXsUHHbPm6+kl1p9w==}
@@ -2137,7 +2133,7 @@ packages:
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
       vite: 3.1.2
-    dev: true
+    dev: false
 
   /vite-ssg/0.20.2_dopopvbts3sq6rjbdfirkggb4m:
     resolution: {integrity: sha512-XtBgJEDrN9cL6pgzXvThrTS7Pm5zwZZnBt50EmL/O+QbdhD/ZjCbcp4GmIrWFBWjVBFcgfwgPccmWv3DAF6s/w==}
