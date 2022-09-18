@@ -1,5 +1,5 @@
 {
-  "name": "vidocs",
+  "name": "@akrc/vidocs",
   "private": true,
   "version": "0.0.0",
   "type": "module",
