@@ -14,7 +14,7 @@
     "@akrc/fish": "0.2.1",
     "@types/markdown-it-link-attributes": "3.0.1",
     "@vitejs/plugin-vue": "3.1.0",
-    "@vueuse/head": "0.7.11",
+    "@vueuse/head": "0.7.12",
     "critters": "0.0.16",
     "markdown-it-link-attributes": "4.0.1",
     "markdown-it-shiki": "0.5.1",

@@ -4,7 +4,7 @@ specifiers:
   '@akrc/fish': 0.2.1
   '@types/markdown-it-link-attributes': 3.0.1
   '@vitejs/plugin-vue': 3.1.0
-  '@vueuse/head': 0.7.11
+  '@vueuse/head': 0.7.12
   critters: 0.0.16
   esbuild: 0.15.7
   markdown-it-link-attributes: 4.0.1
@@ -22,7 +22,7 @@ dependencies:
   '@akrc/fish': 0.2.1
   '@types/markdown-it-link-attributes': 3.0.1
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.2+vue@3.2.39
-  '@vueuse/head': 0.7.11_vue@3.2.39
+  '@vueuse/head': 0.7.12_vue@3.2.39
   critters: 0.0.16
   markdown-it-link-attributes: 4.0.1
   markdown-it-shiki: 0.5.1
@@ -310,8 +310,8 @@ packages:
     resolution: {integrity: sha512-D3dl2ZB9qE6mTuWPk9RlhDeP1dgNRUKC3NJxji74A4yL8M2MwlhLKUC/49WHjrNzSPug58fWx/yFbaTzGAQSBw==}
     dev: false
 
-  /@vueuse/head/0.7.11_vue@3.2.39:
-    resolution: {integrity: sha512-qW2VbJnQ7c1nHqt1wWQYtPf6pMKghcBsCGQd76zFSzKZXncjOYV1I5dZcmAdj3E30JP0WKWCItVbV/cgSAPipA==}
+  /@vueuse/head/0.7.12_vue@3.2.39:
+    resolution: {integrity: sha512-sRcrE6VohiHInQR0sB0U8H8x2hAKdo+AIhd5PWBLx1jUp2vwyeQyA/4rlCzP5CMDB8z61MLvsOCApFJrRMRtTQ==}
     peerDependencies:
       vue: '>=2.7 || >=3'
     dependencies:
