@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { build, dev } from "./bin.js"
+import { build, dev, ssg } from "./bin.js"
 
 const command = process.argv.slice(1)[1]
 
@@ -9,6 +9,9 @@ switch (command) {
     break
   case "dev":
     dev()
+    break
+  case "build:ssg":
+    ssg()
     break
   default:
     console.warn("Invalid parameter")
