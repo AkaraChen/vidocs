@@ -7,6 +7,7 @@ import { ViteMinifyPlugin as minify } from "vite-plugin-minify";
 import Shiki from "markdown-it-shiki";
 import mila from "markdown-it-link-attributes";
 import path from "path";
+import { build as ssgBuild } from "vite-ssg/node";
 
 async function configPlugin() {
   const virtualModuleId = "virtual:config";
@@ -78,11 +79,19 @@ export const build = async () => {
   await createBuild({
     ...config("docs"),
     build: {
-      rollupOptions: {
-        output: {
-          dir: path.resolve(process.cwd(), "./dist"),
-        },
-      },
+      outDir: path.resolve(process.cwd(), "./dist"),
     },
   });
+};
+
+export const ssg = async () => {
+  await ssgBuild(
+    {},
+    {
+      ...config("docs"),
+      build: {
+        outDir: path.resolve(process.cwd(), "./dist"),
+      },
+    }
+  );
 };
