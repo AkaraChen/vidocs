@@ -22,7 +22,7 @@ async function configPlugin() {
         return resolvedVirtualModuleId;
       }
     },
-    load(id) {
+    load(id: string) {
       if (id === resolvedVirtualModuleId) {
         return `export const config = ${JSON.stringify(configFile)}`;
       }
@@ -35,9 +35,6 @@ const __dirname = fileURLToPath(new URL(".", import.meta.url));
 const config = (docsDir: string) => {
   return {
     plugins: [
-      vue({
-        include: [/\.vue$/, /\.md$/],
-      }),
       Markdown({
         headEnabled: true,
         markdownItSetup: (md) => {
@@ -52,8 +49,10 @@ const config = (docsDir: string) => {
           });
         },
       }),
+      vue({
+        include: [/\.vue$/, /\.md$/],
+      }),
       Pages({ dirs: docsDir, extensions: ["md", "vue"] }),
-      minify(),
       configPlugin(),
     ],
     configFile: false as false,
