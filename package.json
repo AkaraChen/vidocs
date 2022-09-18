@@ -1,6 +1,6 @@
 {
   "name": "@akrc/vidocs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "scripts": {
     "build": "esbuild bin.ts --outfile=bin.js",
