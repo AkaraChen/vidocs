@@ -11,6 +11,12 @@
 <script lang="ts" setup>
 import Nav from './layout/nav.vue';
 import Sidebar from './layout/sidebar.vue';
+import { useStore } from "./config"
+import { useHead } from "@vueuse/head"
+
+useHead({
+  title: useStore().name,
+});
 </script>
 
 <style>
