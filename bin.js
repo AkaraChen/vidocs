@@ -71,11 +71,6 @@ export const build = async () => {
   await createBuild({
     ...config("docs"),
     build: {
-      rollupOptions: {
-        output: {
-          dir: path.resolve(process.cwd(), "./dist")
-        }
-      },
       outDir: path.resolve(process.cwd(), "./dist")
     }
   });
@@ -86,11 +81,6 @@ export const ssg = async () => {
     {
       ...config("docs"),
       build: {
-        rollupOptions: {
-          output: {
-            dir: path.resolve(process.cwd(), "./dist")
-          }
-        },
         outDir: path.resolve(process.cwd(), "./dist")
       }
     }
