@@ -36,10 +36,13 @@ const toggle = () => {
   if (screen.width <= 768)
     status.value = !status.value
 };
+
 let height = ref(() => { });
 let toTop = () => { };
+
 onMounted(() => {
-  height.value = () => document.body.scrollHeight;
+  height.value = () => document.body.scrollHeight + "px";
+  console.log(height.value())
   toTop = () => {
     const beginTime = Date.now()
     const beginValue = document.documentElement.scrollTop;
@@ -65,13 +68,13 @@ onMounted(() => {
 
 <style scoped>
 aside {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  height: v-bind(height()+"px");
+  height: 100vh;
   background-color: var(--nav-color);
   width: calc(100vw - 64px);
-  z-index: 100;
+  z-index: 300;
   transition: 0.125s ease-in;
   overflow: auto;
 }
