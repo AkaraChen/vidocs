@@ -37,12 +37,9 @@ const toggle = () => {
     status.value = !status.value
 };
 
-let height = ref(() => { });
 let toTop = () => { };
 
 onMounted(() => {
-  height.value = () => document.body.scrollHeight + "px";
-  console.log(height.value())
   toTop = () => {
     const beginTime = Date.now()
     const beginValue = document.documentElement.scrollTop;
@@ -68,7 +65,7 @@ onMounted(() => {
 
 <style scoped>
 aside {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
