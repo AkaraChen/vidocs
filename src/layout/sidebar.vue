@@ -95,7 +95,7 @@ aside button {
   width: 100%;
   display: flex;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
-  background-color: #fff;
+  background-color: var(--nav-color);
   z-index: 100;
 }
 

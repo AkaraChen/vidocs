@@ -74,4 +74,10 @@ li {
     z-index: 200;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  nav {
+    border-color: #000;
+  }
+}
 </style>

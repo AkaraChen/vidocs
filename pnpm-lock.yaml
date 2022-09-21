@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@akrc/fish': 0.2.1
+  '@akrc/fish': 0.2.2
   '@types/markdown-it-link-attributes': 3.0.1
   '@vitejs/plugin-vue': 3.1.0
   '@vueuse/head': 0.7.12
@@ -19,7 +19,7 @@ specifiers:
   vue-router: 4.1.5
 
 dependencies:
-  '@akrc/fish': 0.2.1
+  '@akrc/fish': 0.2.2
   '@types/markdown-it-link-attributes': 3.0.1
   '@vitejs/plugin-vue': 3.1.0_vite@3.1.3+vue@3.2.39
   '@vueuse/head': 0.7.12_vue@3.2.39
@@ -40,8 +40,8 @@ devDependencies:
 
 packages:
 
-  /@akrc/fish/0.2.1:
-    resolution: {integrity: sha512-hxHkjxSLwCsa4JVSXhELWTErQ+adGkGyWKF9qyqH2gB1Fxy7QrmixFX6QrG23W/dt35OT6SVA6PoFjHpkUSlNg==}
+  /@akrc/fish/0.2.2:
+    resolution: {integrity: sha512-Cq1DSq/GsTx6NL4GNYN0gDjNd7TD85n/0KDlVPvUMaYsb/if0PjUVSa3t2dxcVrVNZ1+f1gk5k8GCaG0AI/++Q==}
     dev: false
 
   /@antfu/utils/0.5.2:

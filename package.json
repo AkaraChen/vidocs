@@ -11,7 +11,7 @@
     "vidocs": "./index.js"
   },
   "dependencies": {
-    "@akrc/fish": "0.2.1",
+    "@akrc/fish": "0.2.2",
     "@types/markdown-it-link-attributes": "3.0.1",
     "@vitejs/plugin-vue": "3.1.0",
     "@vueuse/head": "0.7.12",
