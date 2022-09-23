@@ -72,7 +72,7 @@ blockquote p {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --nav-color: #11191f;
+    --nav-color: #1b1b1b;
   }
 }
 

@@ -1,5 +1,5 @@
 import { defineStore } from "pinia";
-import { config } from "virtual:config";
+import config from "../vidocs.config";
 
 export const useStore = defineStore("config", {
   state: () => config as configType,

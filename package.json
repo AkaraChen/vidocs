@@ -3,9 +3,8 @@
   "version": "0.0.16",
   "type": "module",
   "scripts": {
-    "build": "esbuild bin.ts --outfile=bin.js",
-    "prepublish": "pnpm run build",
-    "docs:build": "node docs"
+    "build": "vite build",
+    "dev": "vite dev"
   },
   "bin": {
     "vidocs": "./index.js"
